@@ -58,5 +58,6 @@ if (!refs.input.value || !refs.textarea.value) {
 function onClearLocalSubmit(e) {
   e.preventDefault();
   console.log(formObj);
+
   localStorage.removeItem(FORM_FEEDBACK_LOKAL_KEY);
 }
