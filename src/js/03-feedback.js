@@ -12,8 +12,6 @@ let formObj = {
   email: '',
   textarea: '',
 };
-refs.input.value = formObj.email;
-refs.textarea.textContent = formObj.textarea;
 
 refs.form.addEventListener(
   'input',
@@ -59,5 +57,7 @@ function onClearLocalSubmit(e) {
     localStorage.removeItem(FORM_FEEDBACK_LOKAL_KEY);
     formObj.email = '';
     formObj.textarea = '';
+    refs.input.value = '';
+    refs.textarea.textContent = '';
   }
 }
